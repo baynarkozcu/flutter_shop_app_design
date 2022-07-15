@@ -27,9 +27,7 @@
 - [OnBoarding Page](#onboarding_page)
 - [Home Page](#home_page)
 - [Detail Page](#detail_page)
-- [TODO](../TODO.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
