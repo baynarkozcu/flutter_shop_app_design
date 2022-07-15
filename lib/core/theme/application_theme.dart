@@ -134,7 +134,7 @@ class ApplicationTheme {
         style: TextButton.styleFrom(
       primary: ApplicationColors.primaryColor,
       alignment: Alignment.center,
-      elevation: 10,
+      // elevation: 10,
       // textStyle: ThemeConsts.style,
     )),
     // toggleButtonsTheme: ToggleButtonsThemeData(
@@ -211,7 +211,7 @@ class ApplicationTheme {
         borderSide: BorderSide.none,
       ),
       filled: true,
-      fillColor: Colors.white,
+      fillColor: ApplicationColors.cardColor,
       prefixIconColor: ApplicationColors.accentColor,
       suffixIconColor: ApplicationColors.accentColor,
       enabledBorder: OutlineInputBorder(
@@ -432,7 +432,7 @@ class ApplicationTheme {
         borderSide: const BorderSide(width: 4, color: Colors.red),
       ),
       filled: true,
-      fillColor: Colors.white,
+      fillColor: ApplicationColors.cardColor,
       prefixIconColor: ApplicationColors.accentColor,
       suffixIconColor: ApplicationColors.accentColor,
       enabledBorder: OutlineInputBorder(

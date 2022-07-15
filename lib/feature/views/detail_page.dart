@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app_design/extensions/context_extensions.dart';
+import 'package:shop_app_design/core/extensions/context_extensions.dart';
 
-import '../constants/application_colors.dart';
+import '../../core/constants/application_colors.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class DetailPage extends StatelessWidget {
           IconButton(
               onPressed: () {},
               icon: const CircleAvatar(
-                backgroundColor: Colors.white,
+                backgroundColor: ApplicationColors.cardColor,
                 child: Icon(
                   Icons.star_outlined,
                   color: Colors.yellow,
@@ -32,7 +32,7 @@ class DetailPage extends StatelessWidget {
                 child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 24),
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: ApplicationColors.cardColor,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(36),
                   topRight: Radius.circular(36),
