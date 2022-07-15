@@ -31,7 +31,12 @@ class _TitleAndSeeAll extends StatelessWidget {
 class _CategoryCard extends StatelessWidget {
   const _CategoryCard({
     Key? key,
+    required this.categoryName,
+    required this.imageURL,
   }) : super(key: key);
+
+  final String categoryName;
+  final String imageURL;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +49,10 @@ class _CategoryCard extends StatelessWidget {
           color: ApplicationColors.cardColor,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [Icon(Icons.ac_unit_outlined, size: 50), Text("Dress")],
+            children: [
+              Image.network(imageURL, height: 50),
+              Text(categoryName),
+            ],
           ),
         ),
       ),
@@ -63,25 +71,26 @@ class _SearchForm extends StatelessWidget {
       child: TextFormField(
         style: context.textTheme.bodyText1,
         decoration: InputDecoration(
+          hintText: "Search ...",
           prefixIcon: Padding(
             padding: EdgeInsets.all(context.lowValue),
             child: const Icon(
               Icons.search,
             ),
           ),
-          suffixIcon: Padding(
-            padding: EdgeInsets.all(context.lowValue),
-            child: SizedBox(
-              height: 48,
-              width: 48,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: const Icon(
-                  Icons.filter_alt_rounded,
-                ),
-              ),
-            ),
-          ),
+          // suffixIcon: Padding(
+          //   padding: EdgeInsets.all(context.lowValue),
+          //   child: SizedBox(
+          //     height: 48,
+          //     width: 48,
+          //     child: ElevatedButton(
+          //       onPressed: () {},
+          //       child: const Icon(
+          //         Icons.filter_alt_rounded,
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ),
       ),
     );

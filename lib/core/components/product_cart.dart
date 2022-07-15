@@ -9,12 +9,13 @@ class ProductCard extends StatelessWidget {
     Key? key,
     required this.productName,
     required this.price,
-    required this.imageURL,
+    required this.imageURL, required this.description,
   }) : super(key: key);
 
   final String productName;
   final String imageURL;
   final double price;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,12 @@ class ProductCard extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => const DetailPage(),
+                builder: (context) => DetailPage(
+                  productName: productName,
+                  imageURL: imageURL,
+                  price: price,
+                  description: description,
+                ),
               ));
             },
             child: Container(

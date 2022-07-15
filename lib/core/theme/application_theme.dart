@@ -10,57 +10,31 @@ class ApplicationTheme {
     textTheme: const TextTheme(
       headline1: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       headline2: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       headline3: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        // fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       headline4: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        // fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       headline5: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        // fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       headline6: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        // fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       bodyText1: TextStyle(
         color: ApplicationColors.accentColor,
-        // fontSize: 24,
-        //   fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       bodyText2: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
-        //   fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
       button: TextStyle(
         color: ApplicationColors.primaryColor,
-        // fontSize: 24,
         fontWeight: FontWeight.bold,
-        // fontFamily: '',
       ),
     ),
 
@@ -68,9 +42,7 @@ class ApplicationTheme {
       color: ApplicationColors.transparentColor,
       centerTitle: true,
       elevation: 0,
-      // shape: ThemeConsts.round,
       iconTheme: IconThemeData(color: ApplicationColors.accentColor),
-      // actionsIconTheme: ThemeConsts.icon,
       titleTextStyle: TextStyle(
         color: ApplicationColors.primaryColor,
         fontWeight: FontWeight.bold,
@@ -78,54 +50,21 @@ class ApplicationTheme {
     ),
     bottomAppBarTheme: const BottomAppBarTheme(
       shape: CircularNotchedRectangle(),
-      // elevation: 10,
       color: ApplicationColors.primaryColor,
     ),
-    // tabBarTheme: TabBarTheme(
-    //   labelColor: Colors.red,
-    //   labelStyle: ThemeConsts.style,
-    //   unselectedLabelColor: Colors.red,
-    //   unselectedLabelStyle: ThemeConsts.style,
-    //   labelPadding: ThemeConsts.insets,
-    //   indicator: UnderlineTabIndicator(
-    //     borderSide: ThemeConsts.side,
-    //     insets: ThemeConsts.insets,
-    //   ),
-    //   indicatorSize: TabBarIndicatorSize.tab,
-    // ),
-    // bottomNavigationBarTheme: BottomNavigationBarThemeData(
-    //   backgroundColor: Colors.red,
-    //   elevation: 10,
-    //   selectedIconTheme: ThemeConsts.icon,
-    //   selectedItemColor: Colors.yellow,
-    //   selectedLabelStyle: ThemeConsts.style,
-    //   showSelectedLabels: true,
-    //   showUnselectedLabels: false,
-    //   type: BottomNavigationBarType.shifting,
-    //   unselectedIconTheme: ThemeConsts.icon,
-    //   unselectedItemColor: Colors.red,
-    //   unselectedLabelStyle: ThemeConsts.style,
-    // ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: ApplicationColors.primaryColor,
       foregroundColor: ApplicationColors.bgColor,
-      // elevation: 10,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         primary: ApplicationColors.primaryColor,
         alignment: Alignment.center,
-        // elevation: 10,
-        // padding: ThemeConsts.insets,
-        // textStyle: ThemeConsts.style,
       ),
     ),
     buttonTheme: ButtonThemeData(
       // alignedDropdown: false,
       buttonColor: ApplicationColors.primaryColor,
-      // height: 50,
-      // minWidth: 50,
-      // padding: ThemeConsts.insets,
       shape: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
       ),
@@ -134,71 +73,19 @@ class ApplicationTheme {
         style: TextButton.styleFrom(
       primary: ApplicationColors.primaryColor,
       alignment: Alignment.center,
-      // elevation: 10,
-      // textStyle: ThemeConsts.style,
     )),
-    // toggleButtonsTheme: ToggleButtonsThemeData(
-    //   borderColor: Colors.red,
-    //   borderRadius: BorderRadius.circular(25),
-    //   borderWidth: 25,
-    //   color: Colors.red,
-    //   disabledBorderColor: Colors.red,
-    //   disabledColor: Colors.yellow,
-    //   fillColor: Colors.greenAccent,
-    //   selectedBorderColor: Colors.red,
-    //   selectedColor: Colors.yellow,
-    // ),
-    iconTheme: const IconThemeData(color: Colors.red, size: 15),
+    iconTheme: const IconThemeData(color: ApplicationColors.bgColor),
     // drawerTheme: DrawerThemeData(
     //   backgroundColor: Colors.yellow,
     //   elevation: 2,
     //   scrimColor: Colors.red,
     //   shape: ThemeConsts.round,
     // ),
-    // bottomSheetTheme: BottomSheetThemeData(
-    //   backgroundColor: Colors.red,
-    //   clipBehavior: BottomSheet.
-    // ),
-    // dialogTheme: DialogTheme(
-    //   alignment: Alignment.center,
-    //   backgroundColor: Colors.red,
-    //   contentTextStyle: ThemeConsts.style,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    //   titleTextStyle: ThemeConsts.style,
-    // ),
-    // popupMenuTheme: PopupMenuThemeData(
-    //   color: Colors.red,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    //   textStyle: ThemeConsts.style,
-    // ),
-    // snackBarTheme: SnackBarThemeData(
-    //   actionTextColor: Colors.red,
-    //   backgroundColor: Colors.red,
-    //   contentTextStyle: ThemeConsts.style,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    // ),
     cardTheme: CardTheme(
-      // color: ApplicationColors.accentColor,
-      // elevation: 10,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      // margin: const EdgeInsets.all(2),
-    ),
-    listTileTheme: ListTileThemeData(
-      // contentPadding: ThemeConsts.insets,
-      iconColor: ApplicationColors.primaryColor,
-      // selectedColor: ThemeColors.accentColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25),
-      ),
-      // tileColor: ThemeColors.accentColor,
-      textColor: ApplicationColors.primaryColor,
-      // selectedTileColor: ThemeColors.primaryColor,
-      style: ListTileStyle.drawer,
+      color: ApplicationColors.accentColor,
     ),
     dividerTheme: const DividerThemeData(
       color: ApplicationColors.accentColor,
@@ -210,143 +97,84 @@ class ApplicationTheme {
         borderRadius: BorderRadius.circular(12),
         borderSide: BorderSide.none,
       ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none,
+      ),
       filled: true,
       fillColor: ApplicationColors.cardColor,
       prefixIconColor: ApplicationColors.accentColor,
       suffixIconColor: ApplicationColors.accentColor,
-      enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
       errorMaxLines: 5,
-
       iconColor: ApplicationColors.accentColor,
-      // labelStyle: ThemeConsts.style,
-      // hintStyle: ThemeConsts.style,
-      // errorStyle: ThemeConsts.style,
     ),
-    // radioTheme: RadioThemeData(
-    //   fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
-    //   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-    //   splashRadius: 15,
-    // ),
-    // sliderTheme: SliderThemeData(),
-    // switchTheme: SwitchThemeData(),
-    // timePickerTheme: TimePickerThemeData(),
     progressIndicatorTheme: const ProgressIndicatorThemeData(
       color: ApplicationColors.accentColor,
-      // linearMinHeight: 15,
     ),
-    colorScheme: ColorScheme.fromSwatch().copyWith(secondary: ApplicationColors.accentColor),
   );
 
   ThemeData darkTheme = ThemeData().copyWith(
     brightness: Brightness.dark,
     primaryColor: ApplicationColors.primaryColor,
     backgroundColor: ApplicationColors.bgColor,
-    textTheme: TextTheme(
-      headline1: const TextTheme().headline1?.copyWith(
-            color: ApplicationColors.accentColor,
-            fontSize: 24,
-            // fontWeight: FontWeight.bold,
-            // fontFamily: '',
-          ),
-      headline2: const TextTheme().headline2?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          // fontFamily: '',
-          ),
-      headline3: const TextTheme().headline2?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          // fontFamily: '',
-          ),
-      bodySmall: const TextTheme().bodySmall?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          fontFamily: ''),
-      bodyMedium: const TextTheme().bodyMedium?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          // fontFamily: '',
-          ),
-      bodyLarge: const TextTheme().bodyLarge?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          // fontFamily: '',
-          ),
-      button: const TextTheme().button?.copyWith(
-          // color: ApplicationThemeColors.accentColor,
-          // fontSize: 24,
-          // fontWeight: FontWeight.bold,
-          // fontFamily: '',
-          ),
+    textTheme: const TextTheme(
+      headline1: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      headline2: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      headline3: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      headline4: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      headline5: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      headline6: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      bodyText1: TextStyle(
+        color: ApplicationColors.accentColor,
+      ),
+      bodyText2: TextStyle(
+        color: ApplicationColors.primaryColor,
+      ),
+      button: TextStyle(
+        color: ApplicationColors.primaryColor,
+        fontWeight: FontWeight.bold,
+      ),
     ),
 
     appBarTheme: const AppBarTheme(
-      backgroundColor: ApplicationColors.primaryColor,
-      // color: Colors.yellow,
+      color: ApplicationColors.transparentColor,
       centerTitle: true,
-      // elevation: 0,
-      // shape: ThemeConsts.round,
-      iconTheme: IconThemeData(color: Colors.red, size: 15),
-      // actionsIconTheme: ThemeConsts.icon,
-      // titleTextStyle: ThemeConsts.style,
+      elevation: 0,
+      iconTheme: IconThemeData(color: ApplicationColors.accentColor),
+      titleTextStyle: TextStyle(
+        color: ApplicationColors.primaryColor,
+        fontWeight: FontWeight.bold,
+      ),
     ),
     bottomAppBarTheme: const BottomAppBarTheme(
       shape: CircularNotchedRectangle(),
-      // elevation: 10,
       color: ApplicationColors.primaryColor,
     ),
-    // tabBarTheme: TabBarTheme(
-    //   labelColor: Colors.red,
-    //   labelStyle: ThemeConsts.style,
-    //   unselectedLabelColor: Colors.red,
-    //   unselectedLabelStyle: ThemeConsts.style,
-    //   labelPadding: ThemeConsts.insets,
-    //   indicator: UnderlineTabIndicator(
-    //     borderSide: ThemeConsts.side,
-    //     insets: ThemeConsts.insets,
-    //   ),
-    //   indicatorSize: TabBarIndicatorSize.tab,
-    // ),
-    // bottomNavigationBarTheme: BottomNavigationBarThemeData(
-    //   backgroundColor: Colors.red,
-    //   elevation: 10,
-    //   selectedIconTheme: ThemeConsts.icon,
-    //   selectedItemColor: Colors.yellow,
-    //   selectedLabelStyle: ThemeConsts.style,
-    //   showSelectedLabels: true,
-    //   showUnselectedLabels: false,
-    //   type: BottomNavigationBarType.shifting,
-    //   unselectedIconTheme: ThemeConsts.icon,
-    //   unselectedItemColor: Colors.red,
-    //   unselectedLabelStyle: ThemeConsts.style,
-    // ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: ApplicationColors.primaryColor,
       foregroundColor: ApplicationColors.bgColor,
-      // elevation: 10,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         primary: ApplicationColors.primaryColor,
         alignment: Alignment.center,
-        // elevation: 10,
-        // padding: ThemeConsts.insets,
-        // textStyle: ThemeConsts.style,
       ),
     ),
     buttonTheme: ButtonThemeData(
       // alignedDropdown: false,
       buttonColor: ApplicationColors.primaryColor,
-      // height: 50,
-      // minWidth: 50,
-      // padding: ThemeConsts.insets,
       shape: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10),
       ),
@@ -355,20 +183,7 @@ class ApplicationTheme {
         style: TextButton.styleFrom(
       primary: ApplicationColors.primaryColor,
       alignment: Alignment.center,
-      elevation: 10,
-      // textStyle: ThemeConsts.style,
     )),
-    // toggleButtonsTheme: ToggleButtonsThemeData(
-    //   borderColor: Colors.red,
-    //   borderRadius: BorderRadius.circular(25),
-    //   borderWidth: 25,
-    //   color: Colors.red,
-    //   disabledBorderColor: Colors.red,
-    //   disabledColor: Colors.yellow,
-    //   fillColor: Colors.greenAccent,
-    //   selectedBorderColor: Colors.red,
-    //   selectedColor: Colors.yellow,
-    // ),
     iconTheme: const IconThemeData(color: Colors.red, size: 15),
     // drawerTheme: DrawerThemeData(
     //   backgroundColor: Colors.yellow,
@@ -376,86 +191,34 @@ class ApplicationTheme {
     //   scrimColor: Colors.red,
     //   shape: ThemeConsts.round,
     // ),
-    // bottomSheetTheme: BottomSheetThemeData(
-    //   backgroundColor: Colors.red,
-    //   clipBehavior: BottomSheet.
-    // ),
-    // dialogTheme: DialogTheme(
-    //   alignment: Alignment.center,
-    //   backgroundColor: Colors.red,
-    //   contentTextStyle: ThemeConsts.style,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    //   titleTextStyle: ThemeConsts.style,
-    // ),
-    // popupMenuTheme: PopupMenuThemeData(
-    //   color: Colors.red,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    //   textStyle: ThemeConsts.style,
-    // ),
-    // snackBarTheme: SnackBarThemeData(
-    //   actionTextColor: Colors.red,
-    //   backgroundColor: Colors.red,
-    //   contentTextStyle: ThemeConsts.style,
-    //   elevation: 10,
-    //   shape: ThemeConsts.round,
-    // ),
     cardTheme: CardTheme(
-      color: ApplicationColors.accentColor,
-      elevation: 10,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(12),
       ),
-      margin: const EdgeInsets.all(2),
-    ),
-    listTileTheme: ListTileThemeData(
-      // contentPadding: ThemeConsts.insets,
-      iconColor: ApplicationColors.primaryColor,
-      // selectedColor: ThemeColors.accentColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25),
-      ),
-      // tileColor: ThemeColors.accentColor,
-      textColor: ApplicationColors.primaryColor,
-      // selectedTileColor: ThemeColors.primaryColor,
-      style: ListTileStyle.drawer,
     ),
     dividerTheme: const DividerThemeData(
       color: ApplicationColors.accentColor,
       endIndent: 10,
       indent: 10,
     ),
-    inputDecorationTheme: InputDecorationTheme(
+    inputDecorationTheme: const InputDecorationTheme().copyWith(
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(5),
-        borderSide: const BorderSide(width: 4, color: Colors.red),
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none,
       ),
       filled: true,
       fillColor: ApplicationColors.cardColor,
       prefixIconColor: ApplicationColors.accentColor,
       suffixIconColor: ApplicationColors.accentColor,
-      enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(25),
-      ),
       errorMaxLines: 5,
       iconColor: ApplicationColors.accentColor,
-      // labelStyle: ThemeConsts.style,
-      // hintStyle: ThemeConsts.style,
-      // errorStyle: ThemeConsts.style,
     ),
-    // radioTheme: RadioThemeData(
-    //   fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
-    //   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-    //   splashRadius: 15,
-    // ),
-    // sliderTheme: SliderThemeData(),
-    // switchTheme: SwitchThemeData(),
-    // timePickerTheme: TimePickerThemeData(),
     progressIndicatorTheme: const ProgressIndicatorThemeData(
       color: ApplicationColors.accentColor,
-      // linearMinHeight: 15,
     ),
-    colorScheme: ColorScheme.fromSwatch().copyWith(secondary: ApplicationColors.accentColor),
   );
 }

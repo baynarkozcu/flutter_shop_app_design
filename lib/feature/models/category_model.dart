@@ -3,24 +3,29 @@ class Category {
 
   Category({required this.icon, required this.title});
 
-  
-List<Category> demoCategories = [
+  static List<Category> demoCategories = [
     Category(
-      icon: "assets/icons/dress.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/1785/1785375.png",
       title: "Dress",
     ),
     Category(
-      icon: "assets/icons/shirt.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/2503/2503380.png",
       title: "Shirt",
     ),
     Category(
-      icon: "assets/icons/pants.svg",
-      title: "Pants",
+      icon:
+          "https://cdn-icons-png.flaticon.com/512/2933/2933245.png",
+      title: "Computer",
     ),
     Category(
-      icon: "assets/icons/Tshirt.svg",
-      title: "Tshirt",
+      icon:
+          "https://cdn-icons-png.flaticon.com/512/3774/3774155.png",
+      title: "Jewellery",
+    ),
+    Category(
+      icon:
+          "https://cdn-icons-png.flaticon.com/512/2333/2333041.png",
+      title: "Bag",
     ),
   ];
-
 }

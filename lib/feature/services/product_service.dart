@@ -23,8 +23,7 @@ class ProductService {
 
     Future<List<Category>> fetchCategoryList() async {
     final response = Category.demoCategories;
-    var result = response.map((json) => Product.fromJson(json)).toList().sublist(10, 19);
-    await Future.delayed(const Duration(seconds: 3));
-    return result;
+    await Future.delayed(const Duration(seconds: 1));
+    return response;
   }
 }

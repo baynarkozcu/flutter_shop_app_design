@@ -3,6 +3,7 @@ import 'package:shop_app_design/core/extensions/context_extensions.dart';
 
 import '../../core/components/product_cart.dart';
 import '../../core/constants/application_colors.dart';
+import '../models/category_model.dart';
 import '../models/product_model.dart';
 import '../services/product_service.dart';
 
@@ -48,8 +49,8 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Explore", style: context.textTheme.headline4),
-              Text("best Outfits for you", style: context.textTheme.bodyText1),
+              // Text("Explore", style: context.textTheme.headline4),
+              // Text("best Outfits for you", style: context.textTheme.bodyText1),
               Padding(
                 padding: EdgeInsets.only(top: context.normalValue),
                 child: const _SearchForm(),
@@ -59,14 +60,17 @@ class _HomePageState extends State<HomePage> {
                 child: SizedBox(
                   height: 100,
                   child: FutureBuilder(
-                    future: _productService.fetchNewArrivalProductList(),
-                    builder: (context, AsyncSnapshot<List<Product>?> snapshot) {
+                    future: _productService.fetchCategoryList(),
+                    builder: (context, AsyncSnapshot<List<Category>?> snapshot) {
                       if (snapshot.hasData) {
                         return ListView.builder(
                           itemCount: snapshot.data?.length,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return const _CategoryCard();
+                            var category = snapshot.data?[index];
+                            return _CategoryCard(
+                                categoryName: category?.title ?? "",
+                                imageURL: category?.icon ?? "");
                           },
                         );
                       } else {
@@ -77,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               _TitleAndSeeAll(
-                title: "New Arrival",
+                title: "New Season",
                 onPressed: () {},
               ),
               SizedBox(
@@ -95,6 +99,7 @@ class _HomePageState extends State<HomePage> {
                             productName: product?.productName ?? "",
                             price: product?.price ?? 0,
                             imageURL: product?.image ?? "https://picsum.photos/200/300",
+                            description: product?.description ?? "",
                           );
                         },
                       );
@@ -104,6 +109,8 @@ class _HomePageState extends State<HomePage> {
                   },
                 ),
               ),
+
+              Divider(),
               _TitleAndSeeAll(
                 title: "Populer",
                 onPressed: () {},
@@ -120,10 +127,10 @@ class _HomePageState extends State<HomePage> {
                         itemBuilder: (context, index) {
                           var product = snapshot.data?[index];
                           return ProductCard(
-                            productName: product?.productName ?? "",
-                            price: product?.price ?? 0,
-                            imageURL: product?.image ?? "https://picsum.photos/200/300",
-                          );
+                              productName: product?.productName ?? "",
+                              price: product?.price ?? 0,
+                              imageURL: product?.image ?? "https://picsum.photos/200/300",
+                              description: product?.description ?? "");
                         },
                       );
                     } else {
