@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'core/theme/theme_manager.dart';
 import 'feature/views/home_page.dart';
+import 'feature/views/onboaring_page.dart';
 
 
 void main() {
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Flutter Shop App",
+      title: "NarkHouse Shop App",
       theme: ThemeManager().theme,
-      home: const HomePage(),
+      home: const OnboardingPage(),
     );
   }
 }

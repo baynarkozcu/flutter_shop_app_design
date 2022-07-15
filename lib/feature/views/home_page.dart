@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Baynarkozcu Shop"),
+        title: const Text("NarkHouse"),
         leading: IconButton(
           onPressed: () {},
           icon: const Icon(Icons.menu_rounded),
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              Divider(),
+              const Divider(),
               _TitleAndSeeAll(
                 title: "Populer",
                 onPressed: () {},

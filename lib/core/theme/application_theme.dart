@@ -16,6 +16,7 @@ class ApplicationTheme {
       ),
       headline3: TextStyle(
         color: ApplicationColors.primaryColor,
+        fontWeight: FontWeight.bold,
       ),
       headline4: TextStyle(
         color: ApplicationColors.primaryColor,
@@ -126,6 +127,7 @@ class ApplicationTheme {
       ),
       headline3: TextStyle(
         color: ApplicationColors.primaryColor,
+        fontWeight: FontWeight.bold,
       ),
       headline4: TextStyle(
         color: ApplicationColors.primaryColor,
