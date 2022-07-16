@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://gamearchive-nodejs.herokuapp.com/images/logo.svg" alt="Project logo"></a>
+ <img width=200px height=200px src="https://user-images.githubusercontent.com/61154446/179361518-8716566b-9c28-439b-bce8-6f82d8f72a41.svg" alt="Project logo"></a>
 </p>
 
 <h3 align="center"><b>Flutter NarkHouse Shopping App Design</b></h3>
